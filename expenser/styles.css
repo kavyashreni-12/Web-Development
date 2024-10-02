@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+h1{
+      color:#06a91b;
+}
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+.item-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.item-form input, .item-form select {
+    padding: 10px;
+    font-size: 16px;
+}
+
+.item-form button{
+    padding: 10px;
+    font-size: 16px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.item-form button:hover {
+    background-color: #218838;
+}
+
+.bill-items table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bill-items th, .bill-items td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #d8e5d7;
+}
+
+.bill-items th {
+    background-color: #f2f2f2;
+}
+
+.notification {
+    display: none;
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background-color: #0f1712;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.notification.show {
+    display: block;
+    animation: slideIn 0.5s, fadeOut 0.5s 2.5s;
+}
+
+@keyframes slideIn {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 10px;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
